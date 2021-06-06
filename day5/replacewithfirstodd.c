@@ -1,0 +1,34 @@
+#include<stdio.h>
+void replacewithfirstodd(int *arr,int size)
+{
+	int i,odd;
+	for(i=0;i<size;i++)
+	{
+		if(arr[i]%2)
+		{
+			odd=arr[i];
+			break;
+			
+		}
+	}
+	
+	for(i=0;i<size;i++)
+	{
+		if(arr[i]%2<=arr[i])
+			arr[i]=odd;
+	}
+}
+int main()
+{
+	int arr[100],i,size;
+	scanf("%d",&size);
+	for(i=0;i<size;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	replacewithfirstodd(arr,size);
+	for(i=0;i<size;i++)
+	{
+		printf("%d ",arr[i]);
+	}
+}
