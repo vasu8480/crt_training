@@ -1,7 +1,7 @@
 //replace all odd elements with minimum element and
 //all even elements with maximum element
 #include<stdio.h>
-void replaceMinMax(int size, int *arr)
+void replaceMinMax(int size, int *arr);
 {
 	int i;
 	if(size>0) 
